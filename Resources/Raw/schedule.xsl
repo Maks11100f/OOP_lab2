@@ -8,14 +8,14 @@
       <head>
         <title>Розклад занять</title>
         <style>
-          body  { font-family: "Segoe UI", Arial, sans-serif; margin: 24px; color: #222; }
+          body  { font-family: "Segoe UI", Arial, sans-serif; margin: 24px; color: #2b2018; }
           h1    { font-size: 22px; margin-bottom: 4px; }
-          p     { color: #666; margin-top: 0; }
+          p     { color: #76665a; margin-top: 0; }
           table { border-collapse: collapse; width: 100%; font-size: 14px; }
-          th, td { border: 1px solid #c8c8c8; padding: 6px 8px; text-align: left; vertical-align: top; }
-          th    { background: #512bd4; color: #fff; }
-          tr:nth-child(even) td { background: #f4f1fd; }
-          .online { color: #2e7d32; font-style: italic; }
+          th, td { border: 1px solid #e3d5c6; padding: 6px 8px; text-align: left; vertical-align: top; }
+          th    { background: #b5531f; color: #fff; }
+          tr:nth-child(even) td { background: #fbf3ea; }
+          .online { color: #8a5a00; font-style: italic; }
           ul    { margin: 0; padding-left: 18px; }
         </style>
       </head>

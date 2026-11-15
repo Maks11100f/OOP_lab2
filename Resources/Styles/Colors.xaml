@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <?xaml-comp compile="true" ?>
+<!-- Тепла палітра: теракота, крем, коричневий; у темній темі — бурштинові акценти. -->
 <ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <!-- Спільні -->
-    <Color x:Key="Primary">#512BD4</Color>
-    <Color x:Key="Danger">#C62828</Color>
+    <!-- Спільні (кнопки з білим текстом) -->
+    <Color x:Key="Primary">#B5531F</Color>
+    <Color x:Key="Danger">#952B26</Color>
 
     <!-- Світла тема -->
-    <Color x:Key="PageBackground">#F6F5FA</Color>
-    <Color x:Key="CardBackground">#FFFFFF</Color>
+    <Color x:Key="PageBackground">#FAF5EE</Color>
+    <Color x:Key="CardBackground">#FFFCF8</Color>
     <Color x:Key="InputBackground">#FFFFFF</Color>
-    <Color x:Key="Border">#DDD8EC</Color>
-    <Color x:Key="TextPrimary">#1F1B2D</Color>
-    <Color x:Key="TextSecondary">#6B6680</Color>
-    <Color x:Key="Accent">#512BD4</Color>
-    <Color x:Key="SecondaryButtonBackground">#EDE7FC</Color>
-    <Color x:Key="SecondaryButtonText">#3B1F9E</Color>
+    <Color x:Key="Border">#E9DCCD</Color>
+    <Color x:Key="TextPrimary">#2B2018</Color>
+    <Color x:Key="TextSecondary">#76665A</Color>
+    <Color x:Key="Accent">#AE4E1C</Color>
+    <Color x:Key="SecondaryButtonBackground">#F5E5D5</Color>
+    <Color x:Key="SecondaryButtonText">#7A3912</Color>
 
     <!-- Темна тема -->
-    <Color x:Key="PageBackgroundDark">#121018</Color>
-    <Color x:Key="CardBackgroundDark">#1E1B27</Color>
-    <Color x:Key="InputBackgroundDark">#2A2636</Color>
-    <Color x:Key="BorderDark">#363143</Color>
-    <Color x:Key="TextPrimaryDark">#ECE9F4</Color>
-    <Color x:Key="TextSecondaryDark">#A49EB8</Color>
-    <Color x:Key="AccentDark">#A68FF7</Color>
-    <Color x:Key="SecondaryButtonBackgroundDark">#2E2843</Color>
-    <Color x:Key="SecondaryButtonTextDark">#D2C6FB</Color>
+    <Color x:Key="PageBackgroundDark">#16120F</Color>
+    <Color x:Key="CardBackgroundDark">#221B16</Color>
+    <Color x:Key="InputBackgroundDark">#2E251F</Color>
+    <Color x:Key="BorderDark">#3E322A</Color>
+    <Color x:Key="TextPrimaryDark">#F2E9DF</Color>
+    <Color x:Key="TextSecondaryDark">#B7A797</Color>
+    <Color x:Key="AccentDark">#F2A365</Color>
+    <Color x:Key="SecondaryButtonBackgroundDark">#3B2C21</Color>
+    <Color x:Key="SecondaryButtonTextDark">#F6CFA9</Color>
 
 </ResourceDictionary>
