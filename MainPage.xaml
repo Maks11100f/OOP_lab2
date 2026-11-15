@@ -1,12 +1,145 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:OOP_lab2.Models"
              x:Class="OOP_lab2.MainPage"
              Title="Розклад">
 
-    <!-- Тимчасова сторінка: повний інтерфейс з'явиться в наступному коміті. -->
-    <VerticalStackLayout Padding="24" Spacing="8">
-        <Label Text="Розклад — робота з XML" FontSize="22" FontAttributes="Bold" />
-        <Label Text="Інтерфейс у розробці." Style="{StaticResource Hint}" />
-    </VerticalStackLayout>
+    <Grid ColumnDefinitions="390,*" ColumnSpacing="16" Padding="16">
+
+        <!-- ============ Ліва панель: файли, параметри пошуку, дії ============ -->
+        <ScrollView Grid.Column="0">
+            <VerticalStackLayout Spacing="10">
+
+                <!-- Файли -->
+                <Border Style="{StaticResource Card}">
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="XML-ФАЙЛ" Style="{StaticResource SectionHeader}" Margin="0" />
+                        <Grid ColumnDefinitions="*,*" ColumnSpacing="8">
+                            <Button Text="Відкрити…" Clicked="OnOpenFileClicked" />
+                            <Button Grid.Column="1" Text="З Google Drive"
+                                    Style="{StaticResource SecondaryButton}"
+                                    Clicked="OnOpenFromDriveClicked" />
+                        </Grid>
+                        <Label x:Name="XmlFileLabel" Text="Файл не обрано" Style="{StaticResource Hint}" />
+
+                        <Label Text="XSL-ФАЙЛ" Style="{StaticResource SectionHeader}" />
+                        <Grid ColumnDefinitions="*,*" ColumnSpacing="8">
+                            <Button Text="Відкрити…" Clicked="OnOpenXslClicked" />
+                            <Button Grid.Column="1" Text="З Google Drive"
+                                    Style="{StaticResource SecondaryButton}"
+                                    Clicked="OnOpenXslFromDriveClicked" />
+                        </Grid>
+                        <Label x:Name="XslFileLabel" Text="Файл не обрано" Style="{StaticResource Hint}" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Параметри пошуку (генеруються динамічно з атрибутів файлу) -->
+                <Border Style="{StaticResource Card}">
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="ПАРАМЕТРИ ПОШУКУ" Style="{StaticResource SectionHeader}" Margin="0" />
+                        <Label Text="Значення підвантажуються з обраного файлу. Оберіть хоча б один параметр."
+                               Style="{StaticResource Hint}" LineBreakMode="WordWrap" />
+                        <VerticalStackLayout x:Name="FiltersPanel" Spacing="6" />
+
+                        <Label Text="СПОСІБ АНАЛІЗУ" Style="{StaticResource SectionHeader}" />
+                        <HorizontalStackLayout Spacing="4" RadioButtonGroup.GroupName="AnalysisMethod">
+                            <RadioButton x:Name="SaxRadio" Content="SAX" IsChecked="True" />
+                            <RadioButton x:Name="DomRadio" Content="DOM" />
+                            <RadioButton x:Name="LinqRadio" Content="LINQ to XML" />
+                        </HorizontalStackLayout>
+
+                        <Grid ColumnDefinitions="*,*" ColumnSpacing="8">
+                            <Button Text="Пошук" Clicked="OnSearchClicked" />
+                            <Button Grid.Column="1" Text="Clear"
+                                    Style="{StaticResource SecondaryButton}"
+                                    Clicked="OnClearClicked" />
+                        </Grid>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Трансформація та збереження -->
+                <Border Style="{StaticResource Card}">
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="ТРАНСФОРМАЦІЯ ТА ЗБЕРЕЖЕННЯ" Style="{StaticResource SectionHeader}" Margin="0" />
+                        <Label Text="Ім'я файлу (без розширення)" Style="{StaticResource Hint}" />
+                        <Entry x:Name="FileNameEntry" Text="fragment" />
+                        <Button Text="Трансформувати у HTML" Clicked="OnTransformClicked" />
+                        <Label Text="Зберегти відфільтрований фрагмент на Google Drive"
+                               Style="{StaticResource Hint}" LineBreakMode="WordWrap" />
+                        <Grid ColumnDefinitions="*,*" ColumnSpacing="8">
+                            <Button Text="Як XML" CommandParameter="xml" Clicked="OnSaveClicked" />
+                            <Button Grid.Column="1" Text="Як HTML" CommandParameter="html" Clicked="OnSaveClicked" />
+                        </Grid>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Button Text="Вихід" BackgroundColor="{StaticResource Danger}" Clicked="OnExitClicked" />
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- ============ Права панель: поле виводу ============ -->
+        <Grid Grid.Column="1" RowDefinitions="Auto,*,Auto" RowSpacing="10">
+
+            <Label x:Name="ResultsHeader" Text="Результати пошуку" FontSize="20" FontAttributes="Bold" />
+
+            <CollectionView x:Name="ResultsView" Grid.Row="1" SelectionMode="None">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="8" />
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.EmptyView>
+                    <Label Text="Оберіть параметри та натисніть «Пошук» — тут з'являться знайдені заняття."
+                           Style="{StaticResource Hint}" LineBreakMode="WordWrap"
+                           HorizontalOptions="Center" VerticalOptions="Center" />
+                </CollectionView.EmptyView>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Lesson">
+                        <Border Style="{StaticResource Card}">
+                            <Grid ColumnDefinitions="120,*" ColumnSpacing="14">
+                                <VerticalStackLayout Spacing="2">
+                                    <Label Text="{Binding Day}" FontAttributes="Bold" />
+                                    <Label Text="{Binding Time}" FontSize="22"
+                                           TextColor="{StaticResource Primary}" />
+                                    <Label Text="{Binding RoomText}" Style="{StaticResource Hint}" />
+                                </VerticalStackLayout>
+
+                                <VerticalStackLayout Grid.Column="1" Spacing="3">
+                                    <Label Text="{Binding Subject}" FontSize="16" FontAttributes="Bold" />
+                                    <Label Text="{Binding Teacher}" />
+                                    <Label Style="{StaticResource Hint}" LineBreakMode="WordWrap">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="{Binding Department}" />
+                                                <Span Text=" · " />
+                                                <Span Text="{Binding Faculty}" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Label LineBreakMode="WordWrap" FontSize="13">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="Група " />
+                                                <Span Text="{Binding Group}" FontAttributes="Bold" />
+                                                <Span Text=": " />
+                                                <Span Text="{Binding StudentsText}" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!-- Рядок стану -->
+            <HorizontalStackLayout Grid.Row="2" Spacing="8">
+                <ActivityIndicator x:Name="BusyIndicator" IsRunning="False" IsVisible="False"
+                                   WidthRequest="18" HeightRequest="18" Color="{StaticResource Primary}" />
+                <Label x:Name="StatusLabel" Style="{StaticResource Hint}" VerticalOptions="Center" />
+            </HorizontalStackLayout>
+        </Grid>
+    </Grid>
 </ContentPage>
