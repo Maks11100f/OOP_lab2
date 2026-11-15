@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Розклад занять (варіант 5).
+  Структура: Schedule → Lesson (атрибути) → Students → Student.
+  Кількість атрибутів у вузлах Lesson різна: онлайн-заняття не мають атрибута Room.
+-->
+<Schedule>
+  <Lesson Teacher="Іваненко Олег Петрович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра програмних систем і технологій" Room="303" Subject="Об'єктно-орієнтоване програмування" Group="К-25" Day="Понеділок" Time="08:40">
+    <Students>
+      <Student Name="Коваленко Андрій" />
+      <Student Name="Мельник Софія" />
+      <Student Name="Шевчук Максим" />
+      <Student Name="Бондаренко Ірина" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Іваненко Олег Петрович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра програмних систем і технологій" Subject="Об'єктно-орієнтоване програмування" Group="К-26" Day="Понеділок" Time="10:35">
+    <Students>
+      <Student Name="Ткаченко Олена" />
+      <Student Name="Кравченко Дмитро" />
+      <Student Name="Олійник Марія" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Петренко Наталія Василівна" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра математичної інформатики" Room="214" Subject="Бази даних" Group="К-25" Day="Вівторок" Time="08:40">
+    <Students>
+      <Student Name="Коваленко Андрій" />
+      <Student Name="Мельник Софія" />
+      <Student Name="Шевчук Максим" />
+      <Student Name="Бондаренко Ірина" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Петренко Наталія Василівна" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра математичної інформатики" Room="214" Subject="Бази даних" Group="К-26" Day="Вівторок" Time="10:35">
+    <Students>
+      <Student Name="Ткаченко Олена" />
+      <Student Name="Кравченко Дмитро" />
+      <Student Name="Олійник Марія" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Сидоренко Ігор Миколайович" Faculty="Механіко-математичний факультет" Department="Кафедра математичного аналізу" Room="41" Subject="Математичний аналіз" Group="К-25" Day="Середа" Time="12:20">
+    <Students>
+      <Student Name="Коваленко Андрій" />
+      <Student Name="Мельник Софія" />
+      <Student Name="Шевчук Максим" />
+      <Student Name="Бондаренко Ірина" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Сидоренко Ігор Миколайович" Faculty="Механіко-математичний факультет" Department="Кафедра математичного аналізу" Room="41" Subject="Математичний аналіз" Group="ПІ-21" Day="Середа" Time="14:05">
+    <Students>
+      <Student Name="Лисенко Тарас" />
+      <Student Name="Гончаренко Юлія" />
+      <Student Name="Савченко Віктор" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Гребенюк Світлана Олександрівна" Faculty="Факультет інформаційних технологій" Department="Кафедра програмної інженерії" Subject="Веб-технології" Group="ПІ-21" Day="Четвер" Time="08:40">
+    <Students>
+      <Student Name="Лисенко Тарас" />
+      <Student Name="Гончаренко Юлія" />
+      <Student Name="Савченко Віктор" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Гребенюк Світлана Олександрівна" Faculty="Факультет інформаційних технологій" Department="Кафедра програмної інженерії" Room="507" Subject="Проєктування програмних систем" Group="К-26" Day="Четвер" Time="10:35">
+    <Students>
+      <Student Name="Ткаченко Олена" />
+      <Student Name="Кравченко Дмитро" />
+      <Student Name="Олійник Марія" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Мороз Василь Андрійович" Faculty="Факультет інформаційних технологій" Department="Кафедра інтелектуальних систем" Room="507" Subject="Машинне навчання" Group="ПІ-21" Day="П'ятниця" Time="12:20">
+    <Students>
+      <Student Name="Лисенко Тарас" />
+      <Student Name="Гончаренко Юлія" />
+      <Student Name="Савченко Віктор" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Мороз Василь Андрійович" Faculty="Факультет інформаційних технологій" Department="Кафедра інтелектуальних систем" Room="303" Subject="Машинне навчання" Group="К-25" Day="П'ятниця" Time="14:05">
+    <Students>
+      <Student Name="Коваленко Андрій" />
+      <Student Name="Мельник Софія" />
+      <Student Name="Шевчук Максим" />
+      <Student Name="Бондаренко Ірина" />
+    </Students>
+  </Lesson>
+</Schedule>
