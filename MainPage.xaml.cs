@@ -34,6 +34,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
+        ThemePicker.SelectedIndex = Preferences.Default.Get(App.ThemeKey, 0);
         Loaded += async (_, _) => await LoadDefaultFilesAsync();
     }
 
@@ -437,6 +438,19 @@ public partial class MainPage : ContentPage
         {
             _exitDialogOpen = false;
         }
+    }
+
+    // =====================================================================
+    //  Тема оформлення
+    // =====================================================================
+
+    private void OnThemeChanged(object? sender, EventArgs e)
+    {
+        var index = ThemePicker.SelectedIndex;
+        if (index < 0) return;
+
+        (Application.Current as App)?.ApplyTheme(index);
+        Preferences.Default.Set(App.ThemeKey, index);   // запам'ятовуємо вибір між запусками
     }
 
     // =====================================================================

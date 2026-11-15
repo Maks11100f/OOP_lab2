@@ -3,15 +3,30 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
+    <!-- Спільні -->
     <Color x:Key="Primary">#512BD4</Color>
-    <Color x:Key="PrimaryDark">#3B1F9E</Color>
-    <Color x:Key="PrimaryLight">#EDE7FC</Color>
-    <Color x:Key="Accent">#2E7D32</Color>
     <Color x:Key="Danger">#C62828</Color>
+
+    <!-- Світла тема -->
     <Color x:Key="PageBackground">#F6F5FA</Color>
     <Color x:Key="CardBackground">#FFFFFF</Color>
+    <Color x:Key="InputBackground">#FFFFFF</Color>
     <Color x:Key="Border">#DDD8EC</Color>
     <Color x:Key="TextPrimary">#1F1B2D</Color>
     <Color x:Key="TextSecondary">#6B6680</Color>
+    <Color x:Key="Accent">#512BD4</Color>
+    <Color x:Key="SecondaryButtonBackground">#EDE7FC</Color>
+    <Color x:Key="SecondaryButtonText">#3B1F9E</Color>
+
+    <!-- Темна тема -->
+    <Color x:Key="PageBackgroundDark">#121018</Color>
+    <Color x:Key="CardBackgroundDark">#1E1B27</Color>
+    <Color x:Key="InputBackgroundDark">#2A2636</Color>
+    <Color x:Key="BorderDark">#363143</Color>
+    <Color x:Key="TextPrimaryDark">#ECE9F4</Color>
+    <Color x:Key="TextSecondaryDark">#A49EB8</Color>
+    <Color x:Key="AccentDark">#A68FF7</Color>
+    <Color x:Key="SecondaryButtonBackgroundDark">#2E2843</Color>
+    <Color x:Key="SecondaryButtonTextDark">#D2C6FB</Color>
 
 </ResourceDictionary>

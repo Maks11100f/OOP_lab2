@@ -2,13 +2,27 @@ namespace OOP_lab2;
 
 public partial class App : Application
 {
+    /// <summary>Ключ збереженої теми: 0 — системна, 1 — світла, 2 — темна.</summary>
+    public const string ThemeKey = "theme";
+
     public App()
     {
         InitializeComponent();
+        ApplyTheme(Preferences.Default.Get(ThemeKey, 0));
+    }
 
-        // Інтерфейс розрахований на світлу тему. Без цього при темній темі Windows
-        // стандартні елементи (Picker, RadioButton, Entry) малюють білий текст на світлому фоні.
-        UserAppTheme = AppTheme.Light;
+    /// <summary>
+    /// Встановлює тему застосунку. Стилі (AppThemeBinding) і стандартні елементи
+    /// Windows (Picker, RadioButton, Entry) перемикаються разом.
+    /// </summary>
+    public void ApplyTheme(int index)
+    {
+        UserAppTheme = index switch
+        {
+            1 => AppTheme.Light,
+            2 => AppTheme.Dark,
+            _ => AppTheme.Unspecified   // як у Windows
+        };
     }
 
     protected override Window CreateWindow(IActivationState? activationState)

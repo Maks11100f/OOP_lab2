@@ -74,6 +74,21 @@
                     </VerticalStackLayout>
                 </Border>
 
+                <!-- Тема оформлення -->
+                <Grid ColumnDefinitions="Auto,*" ColumnSpacing="10" Margin="2,0">
+                    <Label Text="Тема" VerticalOptions="Center" />
+                    <Picker x:Name="ThemePicker" Grid.Column="1"
+                            SelectedIndexChanged="OnThemeChanged">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Системна (як у Windows)</x:String>
+                                <x:String>Світла</x:String>
+                                <x:String>Темна</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </Grid>
+
                 <Button Text="Вихід" BackgroundColor="{StaticResource Danger}" Clicked="OnExitClicked" />
             </VerticalStackLayout>
         </ScrollView>
@@ -101,7 +116,7 @@
                                 <VerticalStackLayout Spacing="2">
                                     <Label Text="{Binding Day}" FontAttributes="Bold" />
                                     <Label Text="{Binding Time}" FontSize="22"
-                                           TextColor="{StaticResource Primary}" />
+                                           Style="{StaticResource AccentLabel}" />
                                     <Label Text="{Binding RoomText}" Style="{StaticResource Hint}" />
                                 </VerticalStackLayout>
 
@@ -137,7 +152,7 @@
             <!-- Рядок стану -->
             <HorizontalStackLayout Grid.Row="2" Spacing="8">
                 <ActivityIndicator x:Name="BusyIndicator" IsRunning="False" IsVisible="False"
-                                   WidthRequest="18" HeightRequest="18" Color="{StaticResource Primary}" />
+                                   WidthRequest="18" HeightRequest="18" />
                 <Label x:Name="StatusLabel" Style="{StaticResource Hint}" VerticalOptions="Center" />
             </HorizontalStackLayout>
         </Grid>
