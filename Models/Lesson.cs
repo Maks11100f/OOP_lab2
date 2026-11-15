@@ -44,5 +44,5 @@ public class Lesson
     }
 
     public override string ToString() =>
-        $"{Day} {Time} | {Subject} | {Teacher} | {Group} | ауд. {Room ?? "онлайн"}";
+        $"{Day} {Time} | {Subject} | {Teacher} | {Group} | {RoomText}";
 }

@@ -13,11 +13,67 @@
       <Student Name="Бондаренко Ірина" />
     </Students>
   </Lesson>
+  <Lesson Teacher="Семьонов Володимир Вікторович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра обчислювальної математики" Subject="Чисельні методи" Group="К-26" Day="Понеділок" Time="08:40">
+    <Students>
+      <Student Name="Ткаченко Олена" />
+      <Student Name="Кравченко Дмитро" />
+      <Student Name="Олійник Марія" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Наконечний Олександр Григорович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра системного аналізу та теорії прийняття рішень" Room="303" Subject="Теорія керування" Group="ІПС-31" Day="Понеділок" Time="10:35">
+    <Students>
+      <Student Name="Білоус Роман" />
+      <Student Name="Гаврилюк Анастасія" />
+      <Student Name="Тимошенко Владислав" />
+      <Student Name="Козак Катерина" />
+      <Student Name="Мазур Денис" />
+    </Students>
+  </Lesson>
   <Lesson Teacher="Іваненко Олег Петрович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра програмних систем і технологій" Subject="Об'єктно-орієнтоване програмування" Group="К-26" Day="Понеділок" Time="10:35">
     <Students>
       <Student Name="Ткаченко Олена" />
       <Student Name="Кравченко Дмитро" />
       <Student Name="Олійник Марія" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Семьонов Володимир Вікторович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра обчислювальної математики" Room="507" Subject="Чисельні методи" Group="СА-21" Day="Понеділок" Time="10:35">
+    <Students>
+      <Student Name="Остапенко Вероніка" />
+      <Student Name="Кузьменко Артем" />
+      <Student Name="Демченко Христина" />
+      <Student Name="Яковенко Назар" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Стеля Олег Борисович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра комп'ютерної інженерії" Room="40" Subject="Архітектура комп'ютерів" Group="СА-21" Day="Понеділок" Time="12:20">
+    <Students>
+      <Student Name="Остапенко Вероніка" />
+      <Student Name="Кузьменко Артем" />
+      <Student Name="Демченко Христина" />
+      <Student Name="Яковенко Назар" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Погорілий Сергій Дем'янович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра комп'ютерної інженерії" Subject="Паралельні обчислення" Group="К-26" Day="Понеділок" Time="14:05">
+    <Students>
+      <Student Name="Ткаченко Олена" />
+      <Student Name="Кравченко Дмитро" />
+      <Student Name="Олійник Марія" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Красовський Олександр Анатолійович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра системного аналізу та теорії прийняття рішень" Room="305" Subject="Теорія ймовірностей" Group="К-27" Day="Понеділок" Time="15:50">
+    <Students>
+      <Student Name="Савчук Остап" />
+      <Student Name="Литвиненко Дарина" />
+      <Student Name="Захарченко Ілля" />
+      <Student Name="Пономаренко Аліна" />
+      <Student Name="Руденко Богдан" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Нікітченко Микола Степанович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра теорії та технології програмування" Room="216" Subject="Теорія програмування" Group="СА-21" Day="Понеділок" Time="15:50">
+    <Students>
+      <Student Name="Остапенко Вероніка" />
+      <Student Name="Кузьменко Артем" />
+      <Student Name="Демченко Христина" />
+      <Student Name="Яковенко Назар" />
     </Students>
   </Lesson>
   <Lesson Teacher="Петренко Наталія Василівна" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра математичної інформатики" Room="214" Subject="Бази даних" Group="К-25" Day="Вівторок" Time="08:40">
@@ -28,11 +84,89 @@
       <Student Name="Бондаренко Ірина" />
     </Students>
   </Lesson>
+  <Lesson Teacher="Анісімов Анатолій Васильович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра математичної інформатики" Room="43" Subject="Теорія алгоритмів" Group="К-27" Day="Вівторок" Time="08:40">
+    <Students>
+      <Student Name="Савчук Остап" />
+      <Student Name="Литвиненко Дарина" />
+      <Student Name="Захарченко Ілля" />
+      <Student Name="Пономаренко Аліна" />
+      <Student Name="Руденко Богдан" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Капустян Олексій Володимирович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра системного аналізу та теорії прийняття рішень" Room="216" Subject="Диференціальні рівняння" Group="ІПС-31" Day="Вівторок" Time="10:35">
+    <Students>
+      <Student Name="Білоус Роман" />
+      <Student Name="Гаврилюк Анастасія" />
+      <Student Name="Тимошенко Владислав" />
+      <Student Name="Козак Катерина" />
+      <Student Name="Мазур Денис" />
+    </Students>
+  </Lesson>
   <Lesson Teacher="Петренко Наталія Василівна" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра математичної інформатики" Room="214" Subject="Бази даних" Group="К-26" Day="Вівторок" Time="10:35">
     <Students>
       <Student Name="Ткаченко Олена" />
       <Student Name="Кравченко Дмитро" />
       <Student Name="Олійник Марія" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Гаращенко Федір Георгійович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра моделювання складних систем" Subject="Математичне моделювання" Group="К-25" Day="Вівторок" Time="14:05">
+    <Students>
+      <Student Name="Коваленко Андрій" />
+      <Student Name="Мельник Софія" />
+      <Student Name="Шевчук Максим" />
+      <Student Name="Бондаренко Ірина" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Нікітченко Микола Степанович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра теорії та технології програмування" Subject="Теорія програмування" Group="К-26" Day="Вівторок" Time="14:05">
+    <Students>
+      <Student Name="Ткаченко Олена" />
+      <Student Name="Кравченко Дмитро" />
+      <Student Name="Олійник Марія" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Стеля Олег Борисович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра комп'ютерної інженерії" Room="507" Subject="Архітектура комп'ютерів" Group="К-27" Day="Вівторок" Time="14:05">
+    <Students>
+      <Student Name="Савчук Остап" />
+      <Student Name="Литвиненко Дарина" />
+      <Student Name="Захарченко Ілля" />
+      <Student Name="Пономаренко Аліна" />
+      <Student Name="Руденко Богдан" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Гаращенко Федір Георгійович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра моделювання складних систем" Room="216" Subject="Математичне моделювання" Group="ІПС-31" Day="Вівторок" Time="15:50">
+    <Students>
+      <Student Name="Білоус Роман" />
+      <Student Name="Гаврилюк Анастасія" />
+      <Student Name="Тимошенко Владислав" />
+      <Student Name="Козак Катерина" />
+      <Student Name="Мазур Денис" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Закусило Олег Каленикович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра дослідження операцій" Room="217" Subject="Дослідження операцій" Group="ІПС-31" Day="Середа" Time="08:40">
+    <Students>
+      <Student Name="Білоус Роман" />
+      <Student Name="Гаврилюк Анастасія" />
+      <Student Name="Тимошенко Владислав" />
+      <Student Name="Козак Катерина" />
+      <Student Name="Мазур Денис" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Наконечний Олександр Григорович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра системного аналізу та теорії прийняття рішень" Room="305" Subject="Теорія керування" Group="К-27" Day="Середа" Time="08:40">
+    <Students>
+      <Student Name="Савчук Остап" />
+      <Student Name="Литвиненко Дарина" />
+      <Student Name="Захарченко Ілля" />
+      <Student Name="Пономаренко Аліна" />
+      <Student Name="Руденко Богдан" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Куляс Анатолій Іванович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра інформаційних систем" Room="40" Subject="Інформаційні системи" Group="К-27" Day="Середа" Time="10:35">
+    <Students>
+      <Student Name="Савчук Остап" />
+      <Student Name="Литвиненко Дарина" />
+      <Student Name="Захарченко Ілля" />
+      <Student Name="Пономаренко Аліна" />
+      <Student Name="Руденко Богдан" />
     </Students>
   </Lesson>
   <Lesson Teacher="Сидоренко Ігор Миколайович" Faculty="Механіко-математичний факультет" Department="Кафедра математичного аналізу" Room="41" Subject="Математичний аналіз" Group="К-25" Day="Середа" Time="12:20">
@@ -43,11 +177,77 @@
       <Student Name="Бондаренко Ірина" />
     </Students>
   </Lesson>
+  <Lesson Teacher="Капустян Олексій Володимирович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра системного аналізу та теорії прийняття рішень" Room="216" Subject="Диференціальні рівняння" Group="К-26" Day="Середа" Time="12:20">
+    <Students>
+      <Student Name="Ткаченко Олена" />
+      <Student Name="Кравченко Дмитро" />
+      <Student Name="Олійник Марія" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Івохін Євген Вікторович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра системного аналізу та теорії прийняття рішень" Room="217" Subject="Системний аналіз" Group="К-27" Day="Середа" Time="12:20">
+    <Students>
+      <Student Name="Савчук Остап" />
+      <Student Name="Литвиненко Дарина" />
+      <Student Name="Захарченко Ілля" />
+      <Student Name="Пономаренко Аліна" />
+      <Student Name="Руденко Богдан" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Погорілий Сергій Дем'янович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра комп'ютерної інженерії" Room="305" Subject="Паралельні обчислення" Group="К-25" Day="Середа" Time="14:05">
+    <Students>
+      <Student Name="Коваленко Андрій" />
+      <Student Name="Мельник Софія" />
+      <Student Name="Шевчук Максим" />
+      <Student Name="Бондаренко Ірина" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Зуб Світлана Станіславівна" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра моделювання складних систем" Room="217" Subject="Лінійна алгебра" Group="К-27" Day="Середа" Time="14:05">
+    <Students>
+      <Student Name="Савчук Остап" />
+      <Student Name="Литвиненко Дарина" />
+      <Student Name="Захарченко Ілля" />
+      <Student Name="Пономаренко Аліна" />
+      <Student Name="Руденко Богдан" />
+    </Students>
+  </Lesson>
   <Lesson Teacher="Сидоренко Ігор Миколайович" Faculty="Механіко-математичний факультет" Department="Кафедра математичного аналізу" Room="41" Subject="Математичний аналіз" Group="ПІ-21" Day="Середа" Time="14:05">
     <Students>
       <Student Name="Лисенко Тарас" />
       <Student Name="Гончаренко Юлія" />
       <Student Name="Савченко Віктор" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Ляшко Сергій Іванович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра обчислювальної математики" Room="43" Subject="Методи оптимізації" Group="СА-21" Day="Середа" Time="14:05">
+    <Students>
+      <Student Name="Остапенко Вероніка" />
+      <Student Name="Кузьменко Артем" />
+      <Student Name="Демченко Христина" />
+      <Student Name="Яковенко Назар" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Свистунов Сергій Якович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра інформаційних систем" Room="40" Subject="Математична логіка" Group="ІПС-31" Day="Середа" Time="15:50">
+    <Students>
+      <Student Name="Білоус Роман" />
+      <Student Name="Гаврилюк Анастасія" />
+      <Student Name="Тимошенко Владислав" />
+      <Student Name="Козак Катерина" />
+      <Student Name="Мазур Денис" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Панченко Тарас Володимирович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра теорії та технології програмування" Subject="Специфікація та верифікація програм" Group="К-26" Day="Середа" Time="15:50">
+    <Students>
+      <Student Name="Ткаченко Олена" />
+      <Student Name="Кравченко Дмитро" />
+      <Student Name="Олійник Марія" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Кривий Сергій Лук'янович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра інформаційних систем" Subject="Комп'ютерна алгебра" Group="К-27" Day="Середа" Time="15:50">
+    <Students>
+      <Student Name="Савчук Остап" />
+      <Student Name="Литвиненко Дарина" />
+      <Student Name="Захарченко Ілля" />
+      <Student Name="Пономаренко Аліна" />
+      <Student Name="Руденко Богдан" />
     </Students>
   </Lesson>
   <Lesson Teacher="Гребенюк Світлана Олександрівна" Faculty="Факультет інформаційних технологій" Department="Кафедра програмної інженерії" Subject="Веб-технології" Group="ПІ-21" Day="Четвер" Time="08:40">
@@ -62,6 +262,57 @@
       <Student Name="Ткаченко Олена" />
       <Student Name="Кравченко Дмитро" />
       <Student Name="Олійник Марія" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Терещенко Василь Миколайович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра математичної інформатики" Subject="Комп'ютерна геометрія" Group="ІПС-31" Day="Четвер" Time="12:20">
+    <Students>
+      <Student Name="Білоус Роман" />
+      <Student Name="Гаврилюк Анастасія" />
+      <Student Name="Тимошенко Владислав" />
+      <Student Name="Козак Катерина" />
+      <Student Name="Мазур Денис" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Буй Дмитро Борисович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра теорії та технології програмування" Room="303" Subject="Теорія баз даних" Group="К-27" Day="Четвер" Time="14:05">
+    <Students>
+      <Student Name="Савчук Остап" />
+      <Student Name="Литвиненко Дарина" />
+      <Student Name="Захарченко Ілля" />
+      <Student Name="Пономаренко Аліна" />
+      <Student Name="Руденко Богдан" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Анісімов Анатолій Васильович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра математичної інформатики" Room="507" Subject="Дискретна математика" Group="ІПС-31" Day="П'ятниця" Time="08:40">
+    <Students>
+      <Student Name="Білоус Роман" />
+      <Student Name="Гаврилюк Анастасія" />
+      <Student Name="Тимошенко Владислав" />
+      <Student Name="Козак Катерина" />
+      <Student Name="Мазур Денис" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Терещенко Василь Миколайович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра математичної інформатики" Room="305" Subject="Комп'ютерна геометрія" Group="К-26" Day="П'ятниця" Time="10:35">
+    <Students>
+      <Student Name="Ткаченко Олена" />
+      <Student Name="Кравченко Дмитро" />
+      <Student Name="Олійник Марія" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Карнаух Тетяна Олександрівна" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра теорії та технології програмування" Room="507" Subject="Програмування" Group="К-27" Day="П'ятниця" Time="10:35">
+    <Students>
+      <Student Name="Савчук Остап" />
+      <Student Name="Литвиненко Дарина" />
+      <Student Name="Захарченко Ілля" />
+      <Student Name="Пономаренко Аліна" />
+      <Student Name="Руденко Богдан" />
+    </Students>
+  </Lesson>
+  <Lesson Teacher="Буй Дмитро Борисович" Faculty="Факультет комп'ютерних наук та кібернетики" Department="Кафедра теорії та технології програмування" Subject="Теорія баз даних" Group="СА-21" Day="П'ятниця" Time="10:35">
+    <Students>
+      <Student Name="Остапенко Вероніка" />
+      <Student Name="Кузьменко Артем" />
+      <Student Name="Демченко Христина" />
+      <Student Name="Яковенко Назар" />
     </Students>
   </Lesson>
   <Lesson Teacher="Мороз Василь Андрійович" Faculty="Факультет інформаційних технологій" Department="Кафедра інтелектуальних систем" Room="507" Subject="Машинне навчання" Group="ПІ-21" Day="П'ятниця" Time="12:20">

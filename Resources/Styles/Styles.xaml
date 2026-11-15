@@ -25,6 +25,28 @@
         <Setter Property="LineBreakMode" Value="MiddleTruncation" />
     </Style>
 
+    <!-- Явні кольори для полів вводу — щоб вони були видимі незалежно від теми Windows -->
+    <Style TargetType="Picker">
+        <Setter Property="TextColor" Value="{StaticResource TextPrimary}" />
+        <Setter Property="TitleColor" Value="{StaticResource TextSecondary}" />
+        <Setter Property="BackgroundColor" Value="White" />
+        <Setter Property="FontSize" Value="13" />
+        <Setter Property="MinimumHeightRequest" Value="32" />
+    </Style>
+
+    <Style TargetType="Entry">
+        <Setter Property="TextColor" Value="{StaticResource TextPrimary}" />
+        <Setter Property="PlaceholderColor" Value="{StaticResource TextSecondary}" />
+        <Setter Property="BackgroundColor" Value="White" />
+        <Setter Property="FontSize" Value="13" />
+    </Style>
+
+    <Style TargetType="RadioButton">
+        <Setter Property="TextColor" Value="{StaticResource TextPrimary}" />
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="FontSize" Value="13" />
+    </Style>
+
     <Style TargetType="Button">
         <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
         <Setter Property="TextColor" Value="White" />
